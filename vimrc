@@ -1,8 +1,8 @@
 colorscheme solarized
 set nowrap
-set backup							" Turn backups on
-set backupext=".bak"				" Append `.bak' to backups
-set backupdir="~/.backups/"	" Directory to save backups in
+"set backup							" Turn backups on
+"set backupext=".bak"				" Append `.bak' to backups
+"set backupdir="~/.backups/"	" Directory to save backups in
 set showmatch
 set noerrorbells					" No error bells
 set showmode
