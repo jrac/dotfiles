@@ -1,0 +1,68 @@
+URxvt*termName: rxvt
+URxvt.scrollBar: false
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.font: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1,-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
+
+!URxvt.background: black
+!URxvt.foreground: grey
+
+URxvt.iconFile: /usr/share/icons/Adwaita/scalable/apps/utilities-terminal-symbolic.svg
+URxvt.geometry: 134x38
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
+URxvt.intensityStyles: false
+
+URxvt.perl-ext-common: font-size
+
+! 'font-size' plugin keybindings
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+
+! Dark
+! Light
+! #define #181715 #fdf6e3
+! #define #073642 #eee8d5
+! #define #586e75 #93a1a1
+! #define #657b83 #839496
+! #define #839496 #657b83
+! #define #93a1a1 #586e75
+! #define #eee8d5 #073642
+! #define #fdf6e3 #002b36
+
+! URxvt*background: #181715
+*background: #181715
+*foreground: #839496
+*fading: 40
+*fadeColor: #181715
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+!*color0: #073642
+!*color0: S_base02
+*color0: #02101c
+*color1: #dc322f
+*color2: #859900
+*color3: #b58900
+*color4: #C9C7BF
+*color5: #d33682
+*color6: #2aa198
+*color7: #eee8d5
+*color8: #181715
+*color9: #cb4b16
+*color10: #586e75
+*color11: #657b83
+*color12: #839496
+*color13: #6c71c4
+*color14: #93a1a1
+*color15: #fdf6e3

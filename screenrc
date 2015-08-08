@@ -1,0 +1,25 @@
+#caption always "%{b} [%n] - [%{K}%c] - $LOGNAME@%H - %{k}%t"
+
+caption always '%{gk}[%{G}%u@%H%{g}]%{gk}[%{G}%n%{g}]%= %=%{g}[%{C}%d/%m/%y %C %A%{g}]'
+crlf off 					# Copy/paste sillyness
+altscreen 					# Clear screen on exit (pagers, etc)
+startup_message off
+defscrollback 5500
+defmonitor on
+activity "%"
+shell -$SHELL
+logtstamp on
+logtstamp after 1
+logfile flush
+vbell off 
+
+bindkey -k k1 select 0 # F1 = screen 0
+bindkey -k k2 select 1 # F2 = screen 1
+bindkey -k k3 select 2 # F3 = screen 2
+bindkey -k k4 select 3 # F4 = screen 3
+bindkey -k k5 select 4 # F5 = screen 4
+bindkey -k k6 select 5 # F6 = screen 5
+bindkey -k k7 select 6 # F7 = screen 6
+bindkey -k k8 select 7 # F8 = screen 7
+bindkey -k F2 next     # F12 = next
+bindkey -k F1 prev     # F11 = previous
