@@ -1,6 +1,4 @@
-#caption always "%{b} [%n] - [%{K}%c] - $LOGNAME@%H - %{k}%t"
-
-caption always '%{gk}[%{G}%u@%H%{g}]%{gk}[%{G}%n%{g}]%= %=%{g}[%{C}%d/%m/%y %C %A%{g}]'
+caption always '%{gk}[%{G}%H%{g}]%{gk}[%{G}%n%{g}]%= %=%{g}[%{C}%d/%m/%y %c%{g}]'
 crlf off 					# Copy/paste sillyness
 altscreen 					# Clear screen on exit (pagers, etc)
 startup_message off
