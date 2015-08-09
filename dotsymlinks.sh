@@ -2,7 +2,7 @@
 
 dir=~/.dotfiles
 backup_dir=~/.dotfiles.bak
-files="bashrc bash_aliases bash_profile inputrc screenrc urxvt vimrc vim xmodmaprc Xresources"
+files="bashrc bash_aliases bash_profile inputrc screenrc urxvt vimrc vim xmodmaprc xsessionrc Xresources"
 
 mkdir -p $backup_dir
 
