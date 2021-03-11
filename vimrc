@@ -1,8 +1,10 @@
 colorscheme solarized
 set nowrap
+set number
 "set backup							" Turn backups on
 "set backupext=".bak"				" Append `.bak' to backups
 "set backupdir="~/.backups/"	" Directory to save backups in
+set mouse=r
 set showmatch
 set noerrorbells					" No error bells
 set showmode
@@ -27,7 +29,7 @@ set dir=/tmp						" Temp dir
 set clipboard=unnamed			" Universal clipboard
 set shortmess=tWwirx
 set ww+=<,>,[,]					" Don't wrap to next line when using homerow movement keys at end of line
-set t_Co=8							" Use 
+"set t_Co=8					" Use
 set background=dark
 set cpoptions+=B
 set history=150					" Keep 150 lines in history
@@ -73,7 +75,7 @@ endif
 
 map :W :w
 map :Q :q
-noremap :q :nohl<Cr>:q!
+"noremap :q :nohl<Cr>:q!
 map ,wrap :set wrap<Cr>:set wrapmargin=1<Cr>:set tw=79<Cr>
 map ,nowrap :set nowrap<Cr>:set wrapmargin=0<Cr>
 map ,nl :nohl<CR>
@@ -102,15 +104,10 @@ imap <C-J> <C-O>gqap
 nmap <C-J>      gqap
 vmap <C-J>      gq
 
-"map <S-F5> :!galeon % &<Cr>
-
 " Insert current time
 map <C-D>  o<C-R>=strftime("%a %b %d %T %Z %Y")<C-M><C-M>
 imap <C-D> <C-R>=strftime("%a %b %d %T %Z %Y")<C-M><C-M>
 vmap <C-D> o<C-R>=strftime("%a %b %d %T %Z %Y")<C-M><C-M>
-
-" Strip unnecessary whitespace with a non-recursive mapping
-noremap :wq :call StripTrailingWhiteSpace()<Cr>:wq
 
 " Removes unneccessary whitespace
 function StripTrailingWhiteSpace()
